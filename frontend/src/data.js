@@ -7,8 +7,8 @@ const data={
             image:'images/p1.jpg',
             price:120,
             brand:'logitech',
-            rating:4.5,
-            numReviewers:10,
+            rating:1,
+            numReviews:10,
             description:'high quality product',
         },
         {
@@ -18,8 +18,8 @@ const data={
             image:'images/p2.jpg',
             price:40,
             brand:'logitech',
-            rating:4,
-            numReviewers:10,
+            rating:3,
+            numReviews:10,
             description:'high quality product',
         },
         {
@@ -29,8 +29,8 @@ const data={
             image:'images/p3.jpg',
             price:400,
             brand:'samsung',
-            rating:4.8,
-            numReviewers:10,
+            rating:3.8,
+            numReviews:10,
             description:'high quality product',
         },
         {
@@ -40,8 +40,8 @@ const data={
             image:'images/p4.jpg',
             price:800,
             brand:'logitech',
-            rating:3.8,
-            numReviewers:10,
+            rating:4.8,
+            numReviews:10,
             description:'high quality product',
         },
         {
@@ -51,8 +51,8 @@ const data={
             image:'images/p5.jpg',
             price:120,
             brand:'logitech',
-            rating:4.5,
-            numReviewers:10,
+            rating:5,
+            numReviews:10,
             description:'high quality product',
         },
         {
@@ -62,8 +62,8 @@ const data={
             image:'images/p6.jpg',
             price:120,
             brand:'logitech',
-            rating:4.5,
-            numReviewers:10,
+            rating:3.7,
+            numReviews:10,
             description:'high quality product',
         }
     ]
