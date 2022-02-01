@@ -1,0 +1,72 @@
+const data={
+    products:[
+        {
+            _id:'1',
+            name:'Gaming Keyboard',
+            category:'keyboard',
+            image:'images/p1.jpg',
+            price:120,
+            brand:'logitech',
+            rating:4.5,
+            numReviewers:10,
+            description:'high quality product',
+        },
+        {
+            _id:'2',
+            name:'Mouse',
+            category:'mouse',
+            image:'images/p2.jpg',
+            price:40,
+            brand:'logitech',
+            rating:4,
+            numReviewers:10,
+            description:'high quality product',
+        },
+        {
+            _id:'3',
+            name:'Screen',
+            category:'screens',
+            image:'images/p3.jpg',
+            price:400,
+            brand:'samsung',
+            rating:4.8,
+            numReviewers:10,
+            description:'high quality product',
+        },
+        {
+            _id:'4',
+            name:'Portable Computer',
+            category:'computer',
+            image:'images/p4.jpg',
+            price:800,
+            brand:'logitech',
+            rating:3.8,
+            numReviewers:10,
+            description:'high quality product',
+        },
+        {
+            _id:'5',
+            name:'Vertical Mouse',
+            category:'mouse',
+            image:'images/p5.jpg',
+            price:120,
+            brand:'logitech',
+            rating:4.5,
+            numReviewers:10,
+            description:'high quality product',
+        },
+        {
+            _id:'6',
+            name:'Headphones',
+            category:'keyboard',
+            image:'images/p6.jpg',
+            price:120,
+            brand:'logitech',
+            rating:4.5,
+            numReviewers:10,
+            description:'high quality product',
+        }
+    ]
+}
+
+export default data;
