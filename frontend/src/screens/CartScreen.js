@@ -25,8 +25,8 @@ export default function CartScreen(props) {
         props.history.push('/signin?redirect=shipping');
     }
     return (
-        <div className="row top">
-            <div className="col-2">
+        <div className="row column">
+            <div className="cart">
                 <h1>Shopping Cart</h1>
                 {cartItems.length===0?<MessageBox variant="danger">
                     Cart is empty. <Link to="/">Go Shopping</Link>
@@ -35,18 +35,18 @@ export default function CartScreen(props) {
                     <ul>
                         {cartItems.map(item=>(
                             <li key={item.product}>
-                                <div className="row">
-                                    <div>
+                                <div className="row center">
+                                    <div className="width20">
                                         <img src={item.image} 
                                                 alt={item.name} 
                                                 className="small"
 
                                         />
                                     </div>
-                                    <div className="mins30">
-                                        <Link to={`/product/${item.product}`}>{item.name}</Link>
+                                    <div className="width20">
+                                        <p><Link to={`/product/${item.product}`}>{item.name}</Link></p>
                                     </div>
-                                    <div>
+                                    <div className="width20">
                                         <select value={item.qty} 
                                                 onChange={(e)=>
                                                     dispatch(addToCart(item.product,
@@ -59,8 +59,8 @@ export default function CartScreen(props) {
                                             }       
                                         </select>
                                     </div>
-                                    <div>${item.price}</div>
-                                    <div>
+                                    <div className="width20"><p>${item.price}</p></div>
+                                    <div className="width20">
                                         <button type="button"
                                                 onClick={()=>removeFromChartHandler(item.product)}
                                         >
@@ -74,7 +74,7 @@ export default function CartScreen(props) {
                 )}
             </div>
 
-            <div className="col-1">
+            <div className="center">
                 <div className="card medium card-body">
                     <ul>
                         <li>

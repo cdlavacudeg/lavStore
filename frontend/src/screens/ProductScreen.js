@@ -23,12 +23,12 @@ export default function ProductScreen(props) {
       {loading ? <LoadingBox></LoadingBox>
       : error ? <MessageBox variant="danger">{error}</MessageBox>
       :<>
-      <Link to="/">Back to result</Link>
-      <div className='row top'>
-      <div className='col-2'>
+      <Link to="/" className='block'>Back to result</Link>
+      <div className='row column'>
+      <div className='center'>
         <img className='large' src={product.image} alt={product.name}></img>
       </div>
-      <div className='col-1'>
+      <div className='center'>
        <ul>
          <li>
            <h1>{product.name}</h1>
@@ -45,7 +45,7 @@ export default function ProductScreen(props) {
        </ul>
 
       </div>
-      <div className='col-1'>
+      <div className='center'>
         <div className='card medium card-body'>
           <ul>
             <li>

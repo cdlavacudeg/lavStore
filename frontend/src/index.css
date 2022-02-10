@@ -12,7 +12,7 @@ html{
 
 body{
   margin: 0;
-  height: 1vh;
+  min-height: 1vh;
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
   min-width: 320px;
@@ -44,13 +44,14 @@ header{
 
 main{
   grid-area: main;
-  padding: 1rem
+  padding: 1rem;
 }
 
 footer{
   grid-area: footer;
   background-color: #203040;
   color: #ffffff;
+  height: 50px;
 }
 /* Common */
 h1{
@@ -81,7 +82,7 @@ input,
 select, 
 textarea,
 button{
-  padding:1rem;
+  padding:0.5rem;
   border-radius: 0.5rem;
   border:0.1rem #a4a4a4 solid;
   font-size: 1.6rem;
@@ -116,6 +117,18 @@ a.brand{
    font-size:3rem;
    font-weight: bold;
 }
+a.block{
+  padding: 5px;
+  margin: 0.2rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: #203040;
+  color: #ffffff;
+  border-radius: 10px;
+}
+a.block:hover{
+  color: #ff8000;
+}
 .badge{
   background-color: #f02020;
   color: #ffffff;
@@ -126,17 +139,42 @@ a.brand{
 }
 .row{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .row.center{
   justify-content: center;
+  justify-self: center;
 }
 
 .row.top{
   align-items: flex-start;
+}
+.row.column{
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.row.wrap{
+  flex-wrap: wrap;
+}
+
+.width20{
+  width: 20%;
+  padding: 0;
+}
+
+.width20 > *{
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.width20 > select,.width20>button{
+  max-width: 60px;
 }
 
 .col-1{
@@ -148,8 +186,9 @@ a.brand{
   padding: 16px;
 }
 
-.min-30{
-  min-width: 30rem;
+.cart{
+  min-width: 300px;
+  width: 85%;
 }
 /*Images*/
 img {
@@ -168,7 +207,6 @@ img.medium{
 img.large{
   width: 100%;
   max-width: 60rem;
-  margin:0 auto;
 }
 /* Card */
 .card{
@@ -180,7 +218,10 @@ img.large{
   width:290px;
 }
 .card.medium{
+  min-height: 100px;
   height: auto;
+  max-width: 80%;
+  margin: 15px auto;
 }
 .card-body{
   padding:1rem;
